@@ -1,28 +1,75 @@
-html,body
-    {
-        font-family: Arial, Helvetica, sans-serif;
-     height: 600px;
-     margin: 0;
-     padding: 0;
-    }
+html, body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     text-align: left;
     background-color: rgb(85, 3, 3);
     letter-spacing: normal;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    }
+    h1 a {
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        display: inline-block; /* Make anchor tags behave like block elements */
+        margin-right: 20px; /* Adds spacing between the links */
+        align-items: last baseline;
+    }
     
-    
-}
-h1 a {
-    color: white;
-    text-decoration: none;
-    font-size: 10px;
+.cover {
+    position: relative;
     text-align: center;
 }
-
-.cover {
-    height: 600px;
-    width: 1350px;
-    /*background-color: black;*/
-    margin: 0;
-    padding: 0;
+.selector
+{
+   text-align: right;
 }
+
+.container {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    top: 50%; 
+    transform: translateY(-50%);
+} 
+
+.container .box {
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+img
+    {
+        
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            opacity: 50;
+        
+    }
